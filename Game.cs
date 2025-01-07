@@ -131,33 +131,24 @@ namespace Assignment1
 
         public void print24()
         {
-            int max = 25;
-            for (int j = 0; j < max; ++j)
+             for (int i = 1; i <= 4; i++)
+        {
+            // Inner loop to count up to 24 with increments based on the outer loop
+            for (int j = 0; j <= 24; j +=i)
             {
-                Console.Write(j + " , ");
+                // Print the current value with a comma, unless it's the last number
+                if (j== 24)
+                {
+                    Console.Write(j);
+                }
+                else
+                {
+                    Console.Write(j + ",");
+                }
             }
-            Console.WriteLine(" ");
-
-            for (int j = 0; j < max;)
-            {
-                Console.Write(j + " , ");
-                j = j + 2;
-            }
-            Console.WriteLine(" ");
-
-            for (int j = 0; j < max;)
-            {
-                Console.Write(j + " , ");
-                j = j + 3;
-            }
-            Console.WriteLine(" ");
-
-            for (int j = 0; j < max;)
-            {
-                Console.Write(j + " , ");
-                j = j + 4;
-            }
-            Console.WriteLine(" ");
+            // Move to the next line after finishing one sequence
+            Console.WriteLine();
+        }
 
         }
 
